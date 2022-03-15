@@ -1,0 +1,34 @@
+<html>
+<head>
+    <title>Konversi Nilai </title>
+</head>
+<body>
+    <script language="Javascript">
+        function ubah(){
+            var x = document.form1.nilai.value;
+        if(x<=40)
+            document.form1.hasil.value = "E"
+            else if (41<=x && 55>=x)
+            document.form1.hasil.value = "D"
+            else if (56<=x && 60>=x)
+            document.form1.hasil.value = "C"
+            else if (61<=x && 65>=x)
+            document.form1.hasil.value = "BC"
+            else if (66<=x && 70>=x)
+            document.form1.hasil.value = "B"
+            else if (71<=x && 80>=x)
+            document.form1.hasil.value = "AB"
+            else if (81<=x && 100>=x)
+            document.form1.hasil.value = "A"
+            else
+            document.form1.hasil.value ="Nilai Tidak Valid!"
+        }
+    </script>
+    <form name="form1">
+    <h1> Konversi Nilai </h1>
+    <p>Nilai : <input type="text" name="nilai" size="20"></p>
+    <p>Hasil : <input type="text" name="hasil" size="25" disabled="true"></p>
+    <p><input type="button" name="button1" value="UBAH" onclick=ubah()></p>
+    </form>
+</body>
+</html>
